@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <h1 class="title">Pomodoro</h1>
+            <div class="btn-block">
+                <button id="timer" class="tab">Pomodoro</button>
+                <button id="short" class="tab">Short break</button>
+                <button id="long" class="tab">Long break</button>
+            </div>
+            <div class="clock">
+                <div class="clock-wrapper">
+                  <svg class="progress-svg">
+                    <circle class="progress-circle" />
+                  </svg>
+                  <div class="clock-data">
+                    <h2 id="time" class="clock-digits">25:00</h2>
+                    <button id="timeBtn" class="clock-btn">start</button>
+                  </div>
+                </div>
+            </div>
+            <button class="settings-btn"></button>
+            <div class="popup">
+                <div class="popup-header">
+                    <div class="popup-container">
+                        <h2 class="popup-title">Settings</h2>
+                        <button class="close-btn"></button>
+                    </div>
+                </div>
+                <div class="popup-main">
+                    <section class="popup-time">
+                        <div class="popup-container popup-container--time">
+                            <h3 class="popup-section__title">Time (minutes)</h3>
+                            <div class="counters-wrapper">
+                                <div class="count-block">
+                                    <h4 class="count-title">Pomodoro</h4>
+                                    <div class="number__wrapper">
+                                        <button class="number-plus" type="button">
+                                            <img class="arrow" src="images/arrow.svg" alt="minus">
+                                        </button>
+                                        <input id="inputPomodoro" type="number" min="1" max="60" class="time__input">
+                                        <button class="number-minus" type="button">
+                                            <img class="arrow arrow-bottom" src="images/arrow.svg" alt="minus">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="count-block">
+                                    <h4 class="count-title">Short break</h4>
+                                    <div class="number__wrapper">
+                                        <button class="number-plus" type="button">
+                                          <img class="arrow" src="images/arrow.svg" alt="minus">
+                                        </button>
+                                        <input id="inputShort" type="number" min="1" max="60" class="time__input">
+                                        <button class="number-minus" type="button">
+                                          <img class="arrow arrow-bottom" src="images/arrow.svg" alt="minus">
+                                        </button>
+                                      </div>
+                                </div>
+                                <div class="count-block">
+                                    <h4 class="count-title">Long break</h4>
+                                    <div class="number__wrapper">
+                                        <button class="number-plus" type="button">
+                                          <img class="arrow" src="images/arrow.svg" alt="minus">
+                                        </button>
+                                        <input id="inputLong" type="number" min="1" max="60" class="time__input">
+                                        <button class="number-minus" type="button">
+                                          <img class="arrow arrow-bottom" src="images/arrow.svg" alt="minus">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="popup-font">
+                        <div class="popup-container popup-container--font">
+                            <h3 class="popup-section__title">Font</h3>
+                            <div class="fonts-wrapper">
+                                <li class="font__item">
+                                    <span data-font="Kumbh" class="font-family kumbh">Aa</span>
+                                  </li>
+                                  <li class="font__item">
+                                    <span data-font="Roboto" class="font-family roboto">Aa</span>
+                                  </li>
+                                  <li class="font__item">
+                                    <span data-font="Space" class="font-family space">Aa</span>
+                                  </li>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="popup-color">
+                        <div class="popup-container popup-container--color">
+                            <h3 class="popup-section__title">Color</h3>
+                            <ul class="colors-wrapper">
+                                <li data-color="#F87070" class="color__item red"></li>
+                                <li data-color="#70F3F8" class="color__item blue"></li>
+                                <li data-color="#D881F8" class="color__item purple"></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <button class="apply-btn">Apply</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
