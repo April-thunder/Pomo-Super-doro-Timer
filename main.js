@@ -3,7 +3,7 @@ let font = localStorage.getItem('font') || 'Kumbh';
 let newColor; 
 let newFont;
 
-const endSound = new Audio("/sound/timeIsOver.mp3");
+const endSound = new Audio("./sound/timeIsOver.mp3");
 
 // Показ модального окна по кнопке шестеренки и крестику
   const settingsBtn = document.querySelector('.settings-btn');

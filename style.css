@@ -274,7 +274,7 @@ body {
   height: 465px;
   width: 540px;
   z-index: 15;
-  top:130%;
+  top:150%;
   left: 50%;
   margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
@@ -590,7 +590,6 @@ body {
   .popup {
     height: 549px;
     width: 327px;
-    top: 140%;
     border-radius: 15px;
   }
 
@@ -722,7 +721,6 @@ body {
   .popup {
     height: 404px;
     width: 280px;
-    top: 145%;
   }
 
   .popup-container {
