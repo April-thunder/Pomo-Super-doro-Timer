@@ -274,7 +274,8 @@ body {
   height: 465px;
   width: 540px;
   z-index: 15;
-  top:150%;
+  /* top:150%; */
+  top: 150vh;
   left: 50%;
   margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
@@ -285,7 +286,6 @@ body {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  overflow: hidden;
 }
 
 .popup-active {
