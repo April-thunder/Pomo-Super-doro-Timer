@@ -79,7 +79,7 @@ const endSound = new Audio("./sound/timeIsOver.mp3");
     });
   };
 
-// Устанавливаем цвет активного таба
+// Устанавливаем цвет активного  таба
   const setActiveTab = (newTab) => {
     tabs.forEach(tab => tab.classList.remove('tab-active'));
     newTab.classList.add('tab-active');
