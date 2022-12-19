@@ -8,7 +8,6 @@ Exercise to improve Javascript skills
 - JS (setTimeout, setInterval, LocalStorage)
 - HTML
 - CSS (Flexbox Layout)
-- BEM Methodology
 
 ## Notes
 
